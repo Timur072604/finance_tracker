@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.navbar {
+    background-color: #f0f0f0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-brand, .nav-link {
+    color: #333333;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #007bff;
+}
+
+.budget-container {
+    max-width: 1800px;
+    width: 200%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.top-section {
+    display: flex;
+    gap: 20px;
+}
+
+.forms-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.add-category-container, .add-transaction-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.display-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    flex: 1;
+}
+
+.charts-section {
+    display: flex;
+    gap: 20px;
+}
+
+.charts-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.charts-container:first-child {
+    flex: 1;
+}
+
+.charts-container:last-child {
+    width: 30%;
+}
+
+.alert {
+    background-color: #e0e0e0;
+    color: #333333;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.alert-primary {
+    background-color: #ffc107;
+    color: #ffffff;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    color: #ffffff;
+}
+
+.table {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #333333;
+}
+
+.table th, .table td {
+    border-top: none;
+}
+
+.pagination-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pagination-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-buttons button {
+    margin: 0 10px;
+}
+
+.clear-all-container {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chart-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.chart-controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-type-selector, .month-selector, .category-selector, .transaction-type-selector {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.chart-type-selector select, .month-selector select, .category-selector select, .transaction-type-selector select {
+    width: 100%;
+}
+
+.chart-type-selector:last-child, .month-selector:last-child, .category-selector:last-child, .transaction-type-selector:last-child {
+    margin-right: 0;
+}
+
+#transactionsChart {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    max-height: 200px;
+}
+
+#transactionsChart2 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 200px;
+}
+
+.table th span {
+    font-size: 1em;
+    cursor: pointer;
+}
