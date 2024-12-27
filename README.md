@@ -1,5 +1,6 @@
 # finance_tracker
 My first small web application for personal finance tracking.
+To create the project I used Node.js, MySQL, Sequelize, Vue.js and Bootstrap
 
 To run the project, open the console and write "npm i".
 Then launch Apache and MySQL through any program, for example XAMPP Control Panel, then in phpMyAdmin create a database with name "budget-tracker" and with the encoding utf8mb4_general_ci.
